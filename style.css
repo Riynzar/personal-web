@@ -494,41 +494,46 @@ li {
 }
 
 @media (max-width: 768px) {
+    
+    main {
+        margin-left: 0 !important;
+    }
+
     .navbar {
         position: static;
         width: 100%;
-        height: auto; 
+        height: auto;
         transform: none !important; 
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);     
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
     }
-
+    
+    /* 3. Atur ulang layout di dalam navbar */
     .nav-container {
         flex-direction: row;
-        align-items: center;
         justify-content: space-between;
-        width: 100%;
-        height: auto;
-        padding: 0 15px;
+        align-items: center;
+        height: 60px;
+        padding: 0 15px; 
     }
-
+    
     .nav-title {
-        font-size: 16px;
-        font-weight: 600;
-        color: #047857;
-        margin: 0;
+        margin-bottom: 0; 
     }
-
+    
     .nav-links {
         display: none;
     }
 
-    .nav-btn {
-        padding: 6px 8px;
-        font-size: 14px;
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+    .food-grid, .attractions-grid {
+        grid-template-columns: 1fr;
     }
 
-    main {
-        margin-left: 0;
-        padding-top: 70px; /* supaya konten tidak ketutupan navbar */
+    .container {
+        padding: 20px 15px;
     }
 }
+
+
