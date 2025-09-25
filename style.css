@@ -531,8 +531,9 @@ li {
         flex-grow: 1;
         flex-basis: 0;
         text-align: center;
+        align-items: center;
         font-size: 12px;
-        padding: 8px 5px;
+        padding: 8px 8px;
         background-color: #f0fdf4;
         border: 1px solid #a7f3d0;
         min-width: 60px;
@@ -552,9 +553,12 @@ li {
     }
 
     .profile-header {
+        flex-direction: column;
+        text-align: center;    
         align-items: center;
     }
 }
+
 
 
 
