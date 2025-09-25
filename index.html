@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website - Quiz 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">    
+        <div class="nav-container">
+            <h1 class="nav-title">QUIZ 1 Website</h1>
+            <p class="detail">Inspired by Brave Pink and Hero Green Color Tone</p>
+            <div class="nav-links">
+                <a href="index.html" class="nav-btn active">Home</a>
+                <a href="profile.html" class="nav-btn">Profile</a>
+                <a href="hometown.html" class="nav-btn">Hometown</a>
+                <a href="food.html" class="nav-btn">Local Food</a>
+                <a href="tourist.html" class="nav-btn">Tourist Places</a>
+            </div>
+        </div>
+    </nav>
+
+    <!--Main Conteht-->
+    <main>
+        <div class="hero">
+            <h1>Welcome to My First Website</h1>
+            <p>Created for Web Programming Quiz Assignment</p>
+            <div class="hero-buttons">
+                <a href="profile.html" class="btn btn-primary">Learn About Me</a>
+                <a href="hometown.html" class="btn btn-secondary">Explore My Hometown</a>
+            </div>
+        </div>
+        
+        <div class="container">
+            <h2>Which one do you want to know?</h2>
+            <div class="cards">
+                <div class="card" onclick="window.location.href='food.html'">
+                    <h3>My hometown's local food?</h3>
+                    <p>Taste authentic local flavors</p>
+                </div>
+                <div class="card" onclick="window.location.href='tourist.html'">
+                    <h3>or Tourist Places?</h3>
+                    <p>Explore amazing attractions and places</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
