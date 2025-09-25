@@ -494,7 +494,6 @@ li {
 }
 
 @media (max-width: 768px) {
-    
     main {
         margin-left: 0 !important;
     }
@@ -503,31 +502,48 @@ li {
         position: static;
         width: 100%;
         height: auto;
-        transform: none !important; 
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+        transform: none !important;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
     
-    /* 3. Atur ulang layout di dalam navbar */
     .nav-container {
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: column;
         align-items: center;
-        height: 60px;
-        padding: 0 15px; 
+        height: auto;
+        padding: 15px;
     }
     
     .nav-title {
-        margin-bottom: 0; 
+        margin-bottom: 15px;
+        font-size: 22px;
     }
     
     .nav-links {
-        display: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 8px;
     }
 
-    .content-grid {
-        grid-template-columns: 1fr;
+    .nav-btn {
+        flex-grow: 1;
+        flex-basis: 0;
+        text-align: center;
+        font-size: 12px;
+        padding: 8px 5px;
+        background-color: #f0fdf4;
+        border: 1px solid #a7f3d0;
+        min-width: 60px;
     }
-    .food-grid, .attractions-grid {
+
+    .nav-btn.active {
+        background-color: #047857;
+        color: white;
+    }
+
+    .content-grid, .food-grid, .attractions-grid {
         grid-template-columns: 1fr;
     }
 
@@ -535,5 +551,6 @@ li {
         padding: 20px 15px;
     }
 }
+
 
 
