@@ -532,6 +532,7 @@ li {
         flex-basis: 0;
         text-align: center;
         align-items: center;
+        justify-content: center;
         font-size: 12px;
         padding: 0px !important;
         background-color: #f0fdf4;
@@ -558,6 +559,7 @@ li {
         align-items: center;
     }
 }
+
 
 
 
