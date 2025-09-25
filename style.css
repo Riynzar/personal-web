@@ -550,7 +550,12 @@ li {
     .container {
         padding: 20px 15px;
     }
+
+    .profile-header {
+        align-items: center;
+    }
 }
+
 
 
 
